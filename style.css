@@ -1,0 +1,57 @@
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Roboto Mono', monospace; */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Inconsolata', monospace;
+    list-style: none;/*Sacar puntitos*/
+    text-decoration: none;/*Sacar subrayado*/
+    color: white;
+}
+
+body{
+    background-color: black;/*TODO: cambiar por gradiente*/
+
+}
+
+header{
+    position:fixed;/*Fijo en pantalla superior*/
+    top: 0;
+    right: 0;
+    z-index: 100;/*Mostar el header por encima*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 3%;
+    background-color: transparent;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navlist{
+    display: flex;   
+}
+.navlist a{
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+
+#menu-icon{
+    display: none;
+}
+#menu-toggle{
+    display: none;
+}
+.menu-icon-action{
+    display: none;
+}
