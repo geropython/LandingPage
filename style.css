@@ -1,5 +1,3 @@
-/* font-family: 'Inconsolata', monospace;
-font-family: 'Roboto Mono', monospace; */
 *{
     padding: 0;
     margin: 0;
@@ -43,15 +41,107 @@ header{
     transition: all 0.5s ease;
 }
 .navlist a:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(0, 195, 255);
 }
 
 #menu-icon{
-    display: none;
+    color: white;
+    font-size: 35px;
+    z-index: 101;
+    cursor: pointer;
 }
 #menu-toggle{
     display: none;
 }
 .menu-icon-action{
-    display: none;
+    display: block;
+}
+
+/* Color letras parrafos */
+b{
+    color: rgb(0, 195, 255);
+}
+
+/* Hero Section */
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;/*Altura viewport*/
+    background: linear-gradient(245.59deg, #103350 0%, #1c3c6d 25%, #131313 75%);
+    position: relative; /*Permite usar top,botom,left y right*/
+    display: grid; /*Permite la division de columnas en el hero*/
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;/*hay espacio de 2 rem entre las columnas*/
+}
+section{
+    padding: 0;
+}
+
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 25px 0 0 50px;
+}
+
+.hero-text h1{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 0 30px 50px;   
+}
+
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.hero-img img{
+    width: 400px;
+    margin: 10% ;
+    height: auto;
+    transition: all 3s;
+}
+
+.hero-img img:hover{
+    width: 450px;
+    opacity: 0.6;
+}
+
+.hero-text a{
+    display: inline-block;
+    background-color: #3a3a3a;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    margin-left: 50px; /* Reduce la separación horizontal */
+    text-transform: uppercase;
+    transition: all 3s ease ;
+}
+.hero-text a:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.hero-text p{
+    font-size: 80%;
+    margin: 0 0 40px 50px;
+    line-height: 1.9; 
+}
+
+.hero-text a.works{
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.hero-text a.works i{
+    vertical-align: middle;
+    margin-right: 5px;
 }
